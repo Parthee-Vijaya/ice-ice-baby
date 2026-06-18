@@ -10,7 +10,7 @@ export const routes: Route[] = [
     slug: "sky-lagoon",
     name: "Sky Lagoon — 7-trins ritual",
     area: "Reykjavík",
-    startCoord: [64.1247, -21.9436],
+    startCoord: [64.1165, -21.9464],
     distanceKm: 0,
     durationMin: 150,
     elevationM: 0,

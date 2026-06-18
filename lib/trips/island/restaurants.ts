@@ -48,7 +48,7 @@ export const restaurants: Restaurant[] = [
     area: "Suðurland",
     kitchen: "Tomat-bistro · i drivhuset",
     priceLevel: 3,
-    coord: [64.149, -20.2386],
+    coord: [64.1783, -20.4475],
     description:
       "Spis aftensmad midt i et opvarmet tomatdrivhus. Berømt for sin tomatsuppe med friskbagt brød og bloody mary. Åbent 12.00-22.00 — book bord.",
     bookingRequired: true,
