@@ -12,7 +12,7 @@ export const days: DayPlan[] = [
     emoji: "🛬",
     arrival: "08:40",
     routeIds: ["sky-lagoon", "hvalsafari-rib", "reykjadalur"],
-    restaurantIds: ["baejarins-beztu"],
+    restaurantIds: ["vikinga-pylsur"],
     poiIds: ["solfar", "hallgrimskirkja", "camp-reykjavik"],
     tips: [
       "Henter bil + tilbehør kl. 10.00 — handl evt. bagefter",

@@ -22,7 +22,7 @@ export const pois: Poi[] = [
     coord: [64.1417, -21.9266],
     category: "kultur",
     description:
-      "Reykjaviks ikoniske kirke. Lige ved siden af ligger den berømte pølsevogn. Godt udgangspunkt for en aftentur i byen.",
+      "Reykjaviks ikoniske kirke. Lige ved siden af ligger pølsevognen Víkinga Pylsur. Godt udgangspunkt for en aftentur i byen.",
     freeAccess: true,
     emoji: "⛪",
   },

@@ -2,17 +2,17 @@ import type { Restaurant } from "@/lib/types";
 
 export const restaurants: Restaurant[] = [
   {
-    id: "baejarins-beztu",
-    name: "Bæjarins Beztu Pylsur",
+    id: "vikinga-pylsur",
+    name: "Víkinga Pylsur",
     area: "Reykjavík",
-    kitchen: "Islandsk pølse · ikon",
+    kitchen: "Islandsk pølse · ved Hallgrímskirkja",
     priceLevel: 1,
-    coord: [64.1481, -21.9396],
+    coord: [64.1454, -21.9303],
     description:
-      "Reykjaviks legendariske pølsevogn — 'byens bedste pølser' siden 1937. Bestil 'eina með öllu' (med det hele) ved Hallgrímskirkja-området til aftensmad.",
+      "Pølsevogn lige ved Hallgrímskirkja (Skólavörðustígur 3A) — et nyere take på den islandske 'pylsur' med saftigt, langtidstilberedt kød i bollen. Perfekt til aftensmad efter dagens oplevelser; bestil 'eina með öllu' (med det hele).",
     bookingRequired: false,
     emoji: "🌭",
-    tags: ["streetfood", "billigt", "ikon"],
+    tags: ["streetfood", "billigt", "pølser"],
   },
   {
     id: "highland-base",
