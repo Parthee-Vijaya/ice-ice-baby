@@ -320,7 +320,7 @@ export const pois: Poi[] = [
     id: "hellulaug",
     name: "Hellulaug varm kilde",
     area: "Vestfjordene",
-    coord: [65.5969, -23.2153],
+    coord: [65.5772, -23.1597],
     category: "udsigt",
     description:
       "Naturlig varm kilde lige ved havet nær Flókalundur. Findes på Google Maps (men ikke på Apple Kort) — et roligt badestop.",
@@ -464,7 +464,7 @@ export const pois: Poi[] = [
     id: "camp-reykholt",
     name: "Reykholt Campingplads",
     area: "Suðurland",
-    coord: [64.1567, -20.23],
+    coord: [64.1783, -20.4461],
     category: "praktisk",
     description: "Nat 5 — i Biskupstungur, tæt på Den Gyldne Cirkel.",
     freeAccess: false,
