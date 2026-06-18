@@ -113,8 +113,9 @@ export default async function InfoPage({
         <Section title="🛸 Drone-regler & zoner">
           <div className="rounded-2xl border border-border bg-surface p-5">
             <p className="text-sm text-foreground/85">
-              Færøerne følger EU drone-regler (A1/A3). Trafikstovan er myndighed.
-              Tjek dronezoner.eu før hver flight for at se restriktioner.
+              Island følger EU drone-regler (A1/A3). Samgöngustofa (ICETRA) er
+              myndighed. Tjek island.is/drone-map før hver flight for at se
+              restriktioner.
             </p>
             <ul className="mt-3 space-y-2 text-sm">
               {drone.regler.map((r, i) => (
@@ -125,14 +126,14 @@ export default async function InfoPage({
               ))}
             </ul>
             <div className="mt-4 flex flex-wrap gap-2">
-              <DroneZonesButton label="dronezoner.eu" />
+              <DroneZonesButton label="island.is/drone-map" />
               <a
                 href={drone.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 rounded-full border border-border bg-surface px-3 py-1.5 text-xs"
               >
-                Trafikstovan-regler <ExternalLink size={11} />
+                Samgöngustofa-regler <ExternalLink size={11} />
               </a>
             </div>
           </div>
