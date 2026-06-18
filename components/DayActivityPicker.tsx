@@ -95,7 +95,7 @@ export function DayActivityPicker({
               )}
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 to-transparent" />
               <span className="absolute left-3 top-3 rounded-full bg-surface/85 px-2 py-0.5 text-[11px] font-medium backdrop-blur">
-                {o.isPrimary ? "★ Anbefalet" : "Alternativ"}
+                {o.isPrimary ? "Planlagt" : "Alternativ"}
               </span>
               {selected && (
                 <span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-full bg-topo px-2 py-0.5 text-[11px] font-semibold text-white">

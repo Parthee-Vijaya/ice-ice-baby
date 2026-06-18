@@ -108,6 +108,17 @@ export type Accommodation = {
   note?: string;
 };
 
+// Ét stop i dagens program — direkte fra rejseplanen (PDF).
+export type ItineraryStop = {
+  tid?: string; // Afgang / klokkeslæt, fx "Kl. 11.30"
+  transport?: string; // km + transporttid hertil, fx "6,8 km · 11 min"
+  sted: string; // Begivenhed/lokation
+  varighed?: string; // fx "2,5 timer"
+  beskrivelse?: string; // Bemærkning/beskrivelse fra PDF
+  booket?: boolean; // Booket? = JA
+  pris?: string; // fx "30.582 ISK + gebyr"
+};
+
 export type DayPlan = {
   n: number;
   dato: string;
@@ -116,6 +127,7 @@ export type DayPlan = {
   tema: string;
   beskrivelse: string;
   emoji: string;
+  itinerary?: ItineraryStop[];
   routeIds: string[];
   restaurantIds: string[];
   poiIds: string[];
