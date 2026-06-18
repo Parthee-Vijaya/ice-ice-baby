@@ -9,6 +9,7 @@ import { RestaurantCard } from "@/components/RestaurantCard";
 import { FerryBookingCard } from "@/components/FerryBookingCard";
 import { AccommodationCard } from "@/components/AccommodationCard";
 import { DayActivityPicker, type PickOption } from "@/components/DayActivityPicker";
+import { DayItinerary } from "@/components/DayItinerary";
 import { ArrowLeft, ArrowRight, Info, Plane } from "lucide-react";
 
 export function generateStaticParams() {
@@ -226,8 +227,18 @@ export default async function DayPage({
         </div>
       </section>
 
-      {markers.length > 0 && (
+      {day.itinerary && day.itinerary.length > 0 && (
         <section className="mt-6">
+          <h2 className="mb-3 font-display text-xl font-semibold">Dagens program</h2>
+          <p className="mb-3 text-sm text-muted">
+            Stop for stop fra rejseplanen — med transporttid og varighed.
+          </p>
+          <DayItinerary stops={day.itinerary} />
+        </section>
+      )}
+
+      {markers.length > 0 && (
+        <section className="mt-8">
           <h2 className="mb-2 font-display text-xl font-semibold">Dagens kort</h2>
           <Map markers={markers} polylines={polylines} height="55vh" />
         </section>
@@ -237,11 +248,10 @@ export default async function DayPage({
         <section className="mt-8">
           <div className="mb-3">
             <h2 className="font-display text-xl font-semibold">
-              Dagens plan — vælg jeres aktivitet
+              Dagens oplevelser
             </h2>
             <p className="text-sm text-muted">
-              ★ Anbefalet er vores forslag. Tryk <strong>Vælg denne</strong> for at
-              gøre et alternativ til jeres plan — det huskes på din telefon.
+              Aktiviteter og oplevelser fra rejseplanen.
             </p>
           </div>
           <DayActivityPicker tripSlug={m.slug} dayN={day.n} options={pickOptions} />
