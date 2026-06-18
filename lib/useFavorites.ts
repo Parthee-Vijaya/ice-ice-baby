@@ -9,7 +9,7 @@ import { useCallback, useEffect, useState } from "react";
 export type FavoriteKind = "routes" | "restaurants" | "pois";
 
 // Favoritter gemmes lokalt pr. rejse (ingen konto/DB). Nøglen er rejse-præfiks +
-// slags, så Færøernes favoritter ikke blander sig med en anden rejses.
+// slags, så Islands favoritter ikke blander sig med en anden rejses.
 function storageKeyFor(tripSlug: string, kind: FavoriteKind): string {
   return `eventyr-${tripSlug}-fav-${kind}`;
 }

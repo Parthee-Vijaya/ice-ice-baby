@@ -1,11 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#3a7d44"/>
-      <stop offset="1" stop-color="#1c3a22"/>
-    </linearGradient>
+    <clipPath id="r">
+      <rect width="512" height="512" rx="96"/>
+    </clipPath>
   </defs>
-  <rect width="512" height="512" rx="96" fill="url(#g)"/>
-  <text x="256" y="280" text-anchor="middle" font-family="Helvetica" font-size="240" font-weight="900" fill="#fafaf7">F</text>
-  <text x="256" y="400" text-anchor="middle" font-family="Helvetica" font-size="56" font-weight="700" fill="#fafaf7" letter-spacing="6">FÆRØERNE</text>
+  <g clip-path="url(#r)">
+    <!-- Iceland flag: blue field, white cross, red cross. Vertical bar offset to the hoist. -->
+    <rect width="512" height="512" fill="#02529c"/>
+    <rect x="143.36" y="0" width="102.4" height="512" fill="#ffffff"/>
+    <rect x="0" y="204.8" width="512" height="102.4" fill="#ffffff"/>
+    <rect x="168.96" y="0" width="51.2" height="512" fill="#dc1e35"/>
+    <rect x="0" y="230.4" width="512" height="51.2" fill="#dc1e35"/>
+  </g>
 </svg>

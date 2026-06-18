@@ -20,7 +20,7 @@ function divIcon(emoji: string, color = "#3a7d44") {
     </div>`;
   const icon = L.divIcon({
     html,
-    className: "faroe-marker",
+    className: "iceland-marker",
     iconSize: [34, 34],
     iconAnchor: [17, 34],
     popupAnchor: [0, -32],
