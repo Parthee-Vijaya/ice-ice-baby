@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --background: #fafaf7;
+  --foreground: #1c1f1d;
+  --surface: #ffffff;
+  --surface-2: #f1f0ea;
+  --border: #e6e3d8;
+  --muted: #6b6f6a;
+  --topo: #3a7d44;
+  --topo-dark: #2c5f34;
+  --topo-tint: #d8e7d6;
+  --accent: #e07856;
+  --accent-dark: #b85a3c;
+  --warn: #d4a017;
+  --danger: #c0392b;
+  --difficulty-let: #4f9858;
+  --difficulty-middel: #d4a017;
+  --difficulty-svaer: #c0392b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-topo: var(--topo);
+  --color-topo-dark: var(--topo-dark);
+  --color-topo-tint: var(--topo-tint);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --color-let: var(--difficulty-let);
+  --color-middel: var(--difficulty-middel);
+  --color-svaer: var(--difficulty-svaer);
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-fraunces);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #14171a;
+    --foreground: #ececeb;
+    --surface: #1c1f22;
+    --surface-2: #24282b;
+    --border: #2f3438;
+    --muted: #9aa0a2;
+    --topo: #5fa56a;
+    --topo-dark: #3a7d44;
+    --topo-tint: #1e3220;
+    --accent: #f29874;
+  }
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  max-width: 100vw;
+}
+
+/* Safe-area helpers til iOS PWA standalone (notch + home indicator) */
+.pb-safe {
+  padding-bottom: calc(env(safe-area-inset-bottom) + 0.5rem);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+.h-bottomnav {
+  height: calc(4rem + env(safe-area-inset-bottom));
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+.leaflet-container {
+  background: var(--surface-2);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  z-index: 0;
+}
+
+.leaflet-tile {
+  filter: saturate(0.85) sepia(0.05) brightness(1.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  .leaflet-tile {
+    filter: saturate(0.7) sepia(0.05) brightness(0.7) invert(0.92) hue-rotate(180deg);
+  }
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--surface);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px;
+  font-size: 14px;
+}
+
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 5px;
+}
+
+/* Respektér brugere der har slået bevægelse fra (WCAG 2.3.3). Neutraliserer
+   hover-scale, spinners, nedtællings-transitions m.m. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
