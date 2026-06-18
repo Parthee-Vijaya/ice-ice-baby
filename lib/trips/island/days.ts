@@ -52,7 +52,7 @@ export const days: DayPlan[] = [
     emoji: "🚙",
     routeIds: ["landmannalaugar-jeep", "skogafoss-trappen"],
     restaurantIds: ["skyrland"],
-    poiIds: ["hekla", "selfoss", "camp-skogar"],
+    poiIds: ["hekla", "skyrland", "camp-skogar"],
     alternativeRouteIds: [],
     tips: [
       "Lav madpakker til dagens tur",
@@ -96,11 +96,11 @@ export const days: DayPlan[] = [
     titel: "Gletsjerlaguner & tomatfarm",
     tema: "Isbjerge, alfehuse og aftensmad i drivhuset",
     beskrivelse:
-      "Zodiac-bådtur mellem de blå isbjerge på Jökulsárlón kl. 11.10, så et kig på den mindre Fjallsárlón og den hyggelige græstørvskirke Hofskirkja. Eftermiddag i Secret Lagoon med besøg ved de små alfehuse, og aftensmad i Friðheimars tomatdrivhus. Overnatning i Reykholt.",
+      "Morgenstart ved Diamond Beach, hvor klare isstykker glimter på det sorte sand. Så en zodiac-bådtur mellem de blå isbjerge på Jökulsárlón kl. 11.10, og et kig på den mindre Fjallsárlón og den hyggelige græstørvskirke Hofskirkja. Eftermiddag i Secret Lagoon med besøg ved de små alfehuse, og aftensmad i Friðheimars tomatdrivhus. Overnatning i Reykholt.",
     emoji: "🧊",
     routeIds: ["jokulsarlon-zodiac", "secret-lagoon"],
     restaurantIds: ["fridheimar"],
-    poiIds: ["jokulsarlon", "fjallsarlon", "hofskirkja", "camp-reykholt"],
+    poiIds: ["diamond-beach", "jokulsarlon", "fjallsarlon", "hofskirkja", "camp-reykholt"],
     tips: [
       "Kør tidligt hvis I vil gå op langs Jökulsárlón før bådturen",
       "Check ind ved Ice Lagoon-trucken så I undgår kø",
