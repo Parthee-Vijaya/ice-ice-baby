@@ -7,9 +7,9 @@ export const restaurants: Restaurant[] = [
     area: "Reykjavík",
     kitchen: "Islandsk pølse · ved Hallgrímskirkja",
     priceLevel: 1,
-    coord: [64.1454, -21.9303],
+    coord: [64.1452, -21.9247],
     description:
-      "Pølsevogn lige ved Hallgrímskirkja (Skólavörðustígur 3A) — et nyere take på den islandske 'pylsur' med saftigt, langtidstilberedt kød i bollen. Perfekt til aftensmad efter dagens oplevelser; bestil 'eina með öllu' (med det hele).",
+      "Pølsevogn nær Hallgrímskirkja (Frakkastígur 25) — et nyere take på den islandske 'pylsur' med saftigt, langtidstilberedt kød i bollen (prøv pulled lam!). Åbent 11–21. Perfekt til aftensmad efter dagens oplevelser; bestil 'eina með öllu' (med det hele).",
     bookingRequired: false,
     emoji: "🌭",
     tags: ["streetfood", "billigt", "pølser"],
