@@ -414,6 +414,119 @@ export const pois: Poi[] = [
     emoji: "⛪",
   },
 
+  // ── Snæfellsnes-alternativ (hvis færgen Baldur aflyses) ─────────────────────
+  {
+    id: "skardsvik",
+    name: "Skarðsvík",
+    area: "Snæfellsnes",
+    coord: [64.8742, -24.0432],
+    category: "udsigt",
+    description:
+      "Sjælden gylden sandstrand mellem sort lava og turkist hav — yderst på halvøen og mindre kendt. Vikingegrav i nærheden. (Snæfellsjökull Nationalpark — droneforbud.)",
+    freeAccess: true,
+    emoji: "🏖️",
+  },
+  {
+    id: "svortuloft",
+    name: "Svörtuloft (Skálasnagi-fyret)",
+    area: "Snæfellsnes",
+    coord: [64.8637, -24.039],
+    category: "udsigt",
+    description:
+      "Markant orange fyrtårn på de barske fugleklipper yderst mod vest — ofte helt mennesketomt. Lunder i sæsonen. Lige ved Skarðsvík. (Nationalpark — droneforbud.)",
+    freeAccess: true,
+    emoji: "🗼",
+  },
+  {
+    id: "saxholl",
+    name: "Saxhóll-krater",
+    area: "Snæfellsnes",
+    coord: [64.8517, -23.9265],
+    category: "udsigt",
+    description:
+      "Rødligt vulkankrater man bestiger på en snoet metaltrappe (~10 min). Flot udsigt over lavamarkerne og kysten. (Nationalpark — droneforbud.)",
+    freeAccess: true,
+    emoji: "🌋",
+  },
+  {
+    id: "djupalonssandur",
+    name: "Djúpalónssandur",
+    area: "Snæfellsnes",
+    coord: [64.7521, -23.9032],
+    category: "udsigt",
+    description:
+      "Dramatisk sort stenstrand med de gamle 'kraftprøve-sten' (Aflraunir) og rustne rester af et engelsk skibsvrag fra 1948. (Nationalpark — droneforbud.)",
+    freeAccess: true,
+    emoji: "🪨",
+  },
+  {
+    id: "vatnshellir",
+    name: "Vatnshellir lavahule",
+    area: "Snæfellsnes",
+    coord: [64.7481, -23.818],
+    category: "kultur",
+    description:
+      "8.000 år gammel lavatunnel — kun med guidet tur (~45 min) ned ad en vindeltrappe. Book på forhånd / tjek tider. (Nationalpark — droneforbud.)",
+    freeAccess: false,
+    costDKK: 350,
+    emoji: "🕳️",
+  },
+  {
+    id: "londrangar",
+    name: "Lóndrangar",
+    area: "Snæfellsnes",
+    coord: [64.7324, -23.7839],
+    category: "fotografi",
+    description:
+      "To markante basalt-tinder (75 og 61 m) der rejser sig af lavakysten — rester af et gammelt vulkankrater. Kort sti fra Malarrif. (Nationalpark — droneforbud.)",
+    freeAccess: true,
+    emoji: "🗻",
+  },
+  {
+    id: "arnarstapi",
+    name: "Arnarstapi → Hellnar (kystvandring)",
+    area: "Snæfellsnes",
+    coord: [64.7667, -23.6281],
+    category: "udsigt",
+    description:
+      "Smuk kyststi (~2,5 km hver vej) langs basaltformationer, stenbuen Gatklettur og Bárður Snæfellsás-statuen. I Hellnar ligger Baðstofa-hulen og caféen Fjöruhúsið.",
+    freeAccess: true,
+    emoji: "🥾",
+  },
+  {
+    id: "raudfeldsgja",
+    name: "Rauðfeldsgjá kløft",
+    area: "Snæfellsnes",
+    coord: [64.7991, -23.648],
+    category: "udsigt",
+    description:
+      "Skjult, smal kløft der skærer ind i bjerget — kravl ind langs åen (kæder på væggen) til et skjult vandfald. Ægte hidden gem nær Arnarstapi. Bliver glat — pas på.",
+    freeAccess: true,
+    emoji: "🏞️",
+  },
+  {
+    id: "ytri-tunga",
+    name: "Ytri Tunga (sælstrand)",
+    area: "Snæfellsnes",
+    coord: [64.7937, -23.0676],
+    category: "udsigt",
+    description:
+      "Strand på sydkysten kendt for sin sælkoloni — meget pålidelig sæl-spotting i juni–juli (spættet sæl og gråsæl på klipperne). Tag kikkert med.",
+    freeAccess: true,
+    emoji: "🦭",
+  },
+  {
+    id: "gerduberg",
+    name: "Gerðuberg basaltsøjler",
+    area: "Snæfellsnes",
+    coord: [64.852, -22.365],
+    category: "fotografi",
+    description:
+      "Lang væg af næsten perfekt symmetriske, sekskantede basaltsøjler (7–14 m høje) lige ved vej 54. Gratis, imponerende og ofte mennesketom.",
+    freeAccess: true,
+    emoji: "🧱",
+  },
+
   // ── Campingpladser (overnatning skifter hver nat) ───────────────────────────
   {
     id: "camp-reykjavik",
