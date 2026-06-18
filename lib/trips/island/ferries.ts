@@ -15,6 +15,9 @@ export const ferries: Ferry[] = [
     bookingNote:
       "Book i god tid i højsæsonen — bilpladser sælger ud. På turen kan I spotte søpapegøjer (særligt ved Flatey) og hvaler.",
     cancellationRisk: "middel",
+    cancelled: true,
+    cancelledNote:
+      "AFLYST for denne dag — vi udforsker Snæfellsnes i stedet. Se dagens program for alternativet.",
   },
 ];
 

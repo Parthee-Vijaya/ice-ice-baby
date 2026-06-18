@@ -76,6 +76,8 @@ export type Ferry = {
   bookingUrl: string;
   bookingNote?: string;
   cancellationRisk: "lav" | "middel" | "hoej";
+  cancelled?: boolean;
+  cancelledNote?: string;
 };
 
 export type Poi = {
